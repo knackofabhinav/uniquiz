@@ -4,4 +4,6 @@ Quiz App Built using
 - TypeScript 
 - React 
 - Context API for State Management
-- Jest for unit tests
+
+Need to do:
+- Jest for writing unit tests
