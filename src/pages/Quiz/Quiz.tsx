@@ -6,6 +6,8 @@ import { useData } from "../../contexts/DataContext";
 import { Option, Question } from "../../utils/quizData.types";
 
 export default function Quiz() {
+    const [selectedOptionId, setSelectedOptionId] = useState("");
+    const navigate = useNavigate();
     const { colorMode } = useColorMode();
     const isDark = colorMode === "dark";
     const { quizId } = useParams();
@@ -14,9 +16,6 @@ export default function Quiz() {
         dispatch,
     } = useData();
     const currentQuestion = currentQuiz?.questions[questionNo] as Question;
-    const [selectedOptionId, setSelectedOptionId] = useState("");
-
-    const navigate = useNavigate();
 
     const optionColor = (option: Option) => {
         if (!isClickEnabled && option.isAnswer) return "teal"

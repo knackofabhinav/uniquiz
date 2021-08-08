@@ -1,5 +1,4 @@
 import { QUIZ_INITIAL_STATE, ACTION } from "./quiz.types";
-// import { allQuizzes } from "../data/quiz";
 import { Quiz } from "../utils/quizData.types";
 
 export const quizInitialState: QUIZ_INITIAL_STATE = {
