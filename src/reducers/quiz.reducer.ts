@@ -1,7 +1,7 @@
-import { QUIZ_INITIAL_STATE, ACTION } from "./quiz.types";
+import { QUIZ_STATE_TYPE, ACTION } from "./quiz.types";
 import { Quiz } from "../utils/quizData.types";
 
-export const quizInitialState: QUIZ_INITIAL_STATE = {
+export const quizInitialState: QUIZ_STATE_TYPE = {
   allQuizzes: null,
   currentQuiz: null,
   quizId: "",
@@ -12,9 +12,9 @@ export const quizInitialState: QUIZ_INITIAL_STATE = {
 };
 
 export const quizReducer = (
-  state: QUIZ_INITIAL_STATE,
+  state: QUIZ_STATE_TYPE,
   action: ACTION
-): QUIZ_INITIAL_STATE => {
+): QUIZ_STATE_TYPE => {
   switch (action.type) {
     case "RESET_STATE":
       return {

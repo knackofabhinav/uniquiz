@@ -1,6 +1,6 @@
 import { Quiz } from "../utils/quizData.types";
 
-export type QUIZ_INITIAL_STATE = {
+export type QUIZ_STATE_TYPE = {
   allQuizzes: Array<Quiz> | null;
   currentQuiz: Quiz | null;
   quizId: string;
