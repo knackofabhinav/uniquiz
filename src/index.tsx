@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react"
-import { DataProvider } from "./contexts/DataContext"
+import { DataProvider } from "./contexts/DataProvider"
 
 ReactDOM.render(
   <React.StrictMode>
