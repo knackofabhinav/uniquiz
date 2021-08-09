@@ -21,3 +21,8 @@ export type Quiz = {
   totalScore: number;
   questions: Array<Question>;
 };
+
+export type Quizzes = {
+  success: boolean;
+  quizzes: Array<Quiz>;
+};
