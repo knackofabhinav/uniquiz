@@ -2,7 +2,7 @@ import { Flex, Text, Button, useColorMode } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
-import { useData } from "../../contexts/DataContext";
+import { useData } from "../../contexts/DataProvider";
 import { Option, Question } from "../../utils/quizData.types";
 
 export default function Quiz() {

@@ -1,7 +1,7 @@
 import { Button, Flex, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
-import { useData } from "../../contexts/DataContext";
+import { useData } from "../../contexts/DataProvider";
 import { Option, Question } from "../../utils/quizData.types";
 
 export default function Result() {
